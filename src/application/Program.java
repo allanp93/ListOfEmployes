@@ -28,6 +28,7 @@ public class Program {
 				System.out.println("Id already taken! Try again: ");
 				id = sc.nextInt();
 			}
+			
 			System.out.print("Name: ");
 			sc.nextLine();
 			String name = sc.nextLine();
