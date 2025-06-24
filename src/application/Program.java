@@ -42,7 +42,7 @@ public class Program {
 		System.out.println();
 		System.out.print("Enter the employee id that will have salary increase: ");
 		Integer idSalary = sc.nextInt();
-		Employee emp = employeesList.stream().filter(x -> x.getId() == idSalary).findFirst().orElse(null);
+		Employee emp = employeesList.stream().filter(x -> x.getId().equals(idSalary)).findFirst().orElse(null);
 		
 		if(emp == null) {
 			System.out.println("This id does not exist!");
